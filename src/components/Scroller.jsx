@@ -1,5 +1,5 @@
 import "./ScrollingCanvas.css";
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import LocomotiveScroll from "locomotive-scroll";
@@ -148,12 +148,38 @@ const Scroller = () => {
     return () => ctx.revert();
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.scrollY);
+      if (canvasRef.current && window.scrollY === 0) {
+        canvasRef.current.style.paddingTop = "0px";
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div id="main" data-scroll-container>
       <canvas ref={canvasRef}></canvas>
       <div id="page1">
-        <h1 id="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, error? Culpa minus recusandae dolores ducimus quisquam. Expedita, doloribus. Quos ipsam enim ea veritatis delectus officia labore fugit inventore molestiae neque.</h1>
-        <h1 id="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, error? Culpa minus recusandae dolores ducimus quisquam. Expedita, doloribus. Quos ipsam enim ea veritatis delectus officia labore fugit inventore molestiae neque.</h1>
+        <h1 id="left">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam,
+          error? Culpa minus recusandae dolores ducimus quisquam. Expedita,
+          doloribus. Quos ipsam enim ea veritatis delectus officia labore fugit
+          inventore molestiae neque.
+        </h1>
+        <h1 id="right">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam,
+          error? Culpa minus recusandae dolores ducimus quisquam. Expedita,
+          doloribus. Quos ipsam enim ea veritatis delectus officia labore fugit
+          inventore molestiae neque.
+        </h1>
       </div>
       {/* <RankSection/>
       <Roadmap/> */}

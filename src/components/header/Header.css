@@ -1,0 +1,39 @@
+.main-heading {
+  display: flex;
+  width: 100vw;
+  margin-top: 50px;
+  margin-bottom: -8rem; 
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-heading img {
+  width: 8rem;
+  aspect-ratio: 1/1;
+  opacity: 1;
+  margin-right: -10px;
+}
+
+.youth{
+  display: flex;
+  width:35%;
+  justify-content: space-evenly;
+  gap: -40px;
+}
+.spire{
+  display: flex;
+  width:39%;
+  justify-content: space-evenly;
+}
+
+
+.sub-heading {
+  display: flex;
+  width: 100vw;
+  font-size: 2.5rem;
+  margin-top: 8rem;
+  color: white;
+  justify-content: center;
+  animation: fadeInOut 30s ease-in-out;
+
+}

@@ -24,7 +24,7 @@ function Navbar() {
   };
 
   return (
-    <>
+    <div className="navbar">
       <div className="BgImage">
         <img src="./images/image-bg.png" />
       </div>
@@ -133,7 +133,7 @@ function Navbar() {
       >
         <img src="./images/NAV L.png" />
       </div>
-    </>
+    </div>
   );
 }
 

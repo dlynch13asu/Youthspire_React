@@ -2,6 +2,17 @@ body{
     background: #000;
 }
 
+.header-scroll{
+    position: relative;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+}
+.title{
+    position: absolute;
+    top: 10vh;
+}
 #main{
     position: relative;
     height: 450vh;

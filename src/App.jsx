@@ -7,9 +7,11 @@ import RankSection from "./components/Marquee/Marquee";
 function App() {
   return (
     <>
+    <div className="header-scroll">
+      <Scroller />
       <Navbar />
       <Header />
-      <Scroller />
+    </div>
       <RankSection />
     </>
   );

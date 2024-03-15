@@ -20,11 +20,7 @@ const Scroller = () => {
           const canvasHeight = canvasRef.current.height;
           const scrollY = window.scrollY;
           if (canvasWidth > canvasHeight) {
-            if (scrollY > 3000) {
-              canvasRef.current.style.paddingTop = "3000px";
-            } else {
-              canvasRef.current.style.paddingTop = `${scrollY}px`;
-            }
+            canvasRef.current.style.paddingTop = `${scrollY}px`;
           }
         }
       };
@@ -156,14 +152,15 @@ const Scroller = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log(window.scrollY);
+      const endpoint = window.innerHeight * 3;
+
       if (canvasRef.current && window.scrollY === 0) {
         canvasRef.current.style.paddingTop = "0px";
       }
 
-      if (canvasRef.current && window.scrollY > 3000) {
+      if (canvasRef.current && window.scrollY > endpoint) {
         if (canvasRef.current.width > canvasRef.current.height) {
-          canvasRef.current.style.paddingTop = "3000px";
+          canvasRef.current.style.paddingTop = `${endpoint}px`;
         }
       }
     };

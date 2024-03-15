@@ -121,7 +121,7 @@ const Scroller = () => {
         var vRatio = canvas.height / img.height;
         var ratio =
           Math.max(hRatio, vRatio) -
-          (canvas.width > canvas.height ? 0.45 : 0.9);
+          (canvas.width > canvas.height ? 0.45 : 0.8);
         var centerShift_x = (canvas.width - img.width * ratio) / 2;
         var centerShift_y = (canvas.height - img.height * ratio) / 2;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -159,6 +159,12 @@ const Scroller = () => {
       console.log(window.scrollY);
       if (canvasRef.current && window.scrollY === 0) {
         canvasRef.current.style.paddingTop = "0px";
+      }
+
+      if (canvasRef.current && window.scrollY > 3000) {
+        if (canvasRef.current.width > canvasRef.current.height) {
+          canvasRef.current.style.paddingTop = "3000px";
+        }
       }
     };
 

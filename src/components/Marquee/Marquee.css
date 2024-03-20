@@ -8,7 +8,8 @@ section#rank {
   
   marquee.new {
     color: #c04d30;
-    font-size: 9rem;
+    font-size: 6rem;
+    font-weight: 700;
     font-family: sans-serif;
     font-weight: 800;
     line-height: 85px;
@@ -16,7 +17,7 @@ section#rank {
   
   marquee {
     color: #c04d30;
-    font-size: 89px;
+    font-size: 59px;
     font-family: OkineSans;
     font-weight: 400;
     line-height: 85px;
@@ -24,7 +25,11 @@ section#rank {
   
 
   @media screen and (max-width:750px){
+  
+    #rank{
+      margin-top: -5rem;
 
+    }
     marquee.new {
         color: #c04d30;
         font-size: 5rem;
@@ -35,9 +40,9 @@ section#rank {
       
       marquee {
         color: #c04d30;
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-family: OkineSans;
         font-weight: 400;
-        line-height: 3.5rem;
+        line-height: 3rem;
       }
   }

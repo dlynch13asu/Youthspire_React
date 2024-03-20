@@ -1,5 +1,4 @@
 #journey {
-    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     color: white;
@@ -122,7 +121,6 @@
   
   .title {
     width: 25rem;
-  
     display: flex;
     flex-direction: column;
     justify-content: start;

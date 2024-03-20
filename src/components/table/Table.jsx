@@ -6,7 +6,7 @@ function Table() {
             <div className="community-main">
               <div className="container">
                 <div className="row">
-                  <div className="col-xxl-12">
+                
                     <div className="com-2">
                       <h2>WALLET</h2>
                       <h3>RANK</h3>
@@ -25,7 +25,7 @@ function Table() {
                   </div>
                 </div>
               </div>
-            </div>
+            
             <div className="circle-bg">
               <img src="Images/circle.png" alt="" />
               <img src="Images/circle.png" alt="" />

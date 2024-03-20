@@ -1,8 +1,7 @@
 import "./Header.css";
 function Header() {
   return (
-    <>
-    <div className="title" >
+    <div className="header-title" >
       <div className="main-heading">
         <div className="youth">
           <img src="./images/title/6-removebg-preview (1).png" />
@@ -22,7 +21,6 @@ function Header() {
 
       <div className="sub-heading"> ULTIMATE ACCESS CARD</div>
       </div>
-    </>
   );
 }
 

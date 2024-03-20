@@ -6,9 +6,9 @@ function Form() {
       <div className="form-hills">
               <img src="images\full bg.PNG" alt="" />
        </div>
-        <div className="row">
+        <div id="row">
           <div className="form-main-text">
-            <h2>WELCOME TO YOUTSPHIRE</h2>
+            <h2 className="welcome">WELCOME TO YOUTSPHIRE</h2>
             <p>sign up here</p>
           </div>
 
@@ -26,7 +26,7 @@ function Form() {
               <div className="form-group">
                 <label htmlFor="inputEmail4">USERNAME</label>
                 <input
-                  type="USERNAME"
+                  type="text"
                   className="form-control"
                   id="inputEmail4"
                   placeholder=""

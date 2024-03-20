@@ -1,10 +1,10 @@
 .main-heading {
   display: flex;
   width: 100vw;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: -8rem; 
   justify-content: center;
-  gap: 10px;
+
 }
 
 .main-heading img {
@@ -36,4 +36,25 @@
   justify-content: center;
   animation: fadeInOut 30s ease-in-out;
 
+}
+
+@media  screen and (max-width:750px) {
+  .main-heading{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+.main-heading img {
+  width: 4rem;
+  margin-right: 0;  
+}
+
+.sub-heading{
+  margin-top: 8.5rem;
+  font-size: 1.7rem;
+}
 }

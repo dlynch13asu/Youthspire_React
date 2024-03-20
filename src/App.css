@@ -9,12 +9,14 @@ body{
     position: absolute;
     top: 0;
 }
-.title{
+.header-title{
     position: absolute;
     top: 10vh;
 }
+
 #main{
     position: relative;
+    padding-top: 10%;
     height: 450vh;
 }
 

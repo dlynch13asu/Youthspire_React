@@ -103,6 +103,22 @@ section#Community {
     .cir {
         display: none;
       }
+
+      #Community{
+        margin-top: -15rem;
+
+      }
+    
+      .row{
+       
+        
+        justify-content: center;
+        align-items: center;
+      }
+      .com-2{
+        width:85vw;
+      }
+
   }
 
 

@@ -1,7 +1,7 @@
 import "./Footer.css";
 function Footer() {
   return (
-    <>
+    <footer>
         <div className="container">
           <div className="footer-mat">
             <h2>YOUTSPHIRE</h2>
@@ -38,7 +38,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="footer_icon-button">
+            <div id="footer_icon-button">
               <div className="footer-button">
                 <button className="tt rever">CONTACT US</button>
               </div>
@@ -46,22 +46,22 @@ function Footer() {
                 <ul>
                   <li>
                     <a href="#">
-                      <img src="./Images/22.png" alt="" />
+                      <img src="images\22.png" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="./Images/23.png" alt="" />
+                      <img src="images\25.png" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="./Images/25.png" alt="" />
+                      <img src="images\23.png" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="./Images/24.png" alt="" />
+                      <img src="images\24.png" alt="" />
                     </a>
                   </li>
                 </ul>
@@ -70,7 +70,7 @@ function Footer() {
           </div>
         </div>
      
-    </>
+    </footer>
   );
 }
 

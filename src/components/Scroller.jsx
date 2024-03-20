@@ -190,8 +190,6 @@ const Scroller = () => {
           inventore molestiae neque.
         </h1>
       </div>
-      {/* <RankSection/>
-      <Roadmap/> */}
     </div>
   );
 };

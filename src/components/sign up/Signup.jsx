@@ -1,4 +1,3 @@
-import React from "react";
 import "./Signup.css";
 function Signup() {
 
@@ -13,7 +12,7 @@ function Signup() {
       <div className="container">
         <div className="header">
           <img src="./Images/title/6-removebg-preview (1).png" />
-          <h1>WELCOME TO YOUTHSPIRE</h1>
+          <h1>WELCOME TO YOUTHSPIRE</h1> 
         </div>
         <div className="form-container">
           <div className="box">
@@ -74,7 +73,7 @@ function Signup() {
               <div className="checkbox">
                 <div className="check">
                   <input type="checkbox" id="terms" style={inlinestyle}  name="" />
-                  <label for="terms">Accept terms and conditions</label>
+                  <label htmlFor="terms">Accept terms and conditions</label>
                 </div>
                 <button type="submit">SIGN UP</button>
               </div>
